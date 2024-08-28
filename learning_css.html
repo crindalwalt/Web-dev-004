@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This page is very good" />
+
+    <title>learning Css</title>
+
+    <style>
+      /* 
+        -------------Selectors-----------------
+        tag selector
+        class selector
+        id selector
+        group selector
+      
+      */
+      h1 {
+        /* background-color: rgb(0, 41, 128); */
+        padding: 1rem;
+        /* border-radius: 2rem; */
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-weight: bold;
+      }
+      .lofi {
+        padding: 1rem;
+        border: 1px solid gray;
+      }
+      .grad {
+        background-color: #d9afd9;
+        background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+      }
+      #heading{
+        padding: 1rem;
+        margin: auto;
+        border: 2px solid burlywood;
+        background-color: rgb(201, 167, 123);
+        color: brown;
+        border-radius: .4rem;
+      }
+
+      .lofi,#heading{
+        box-shadow: 12px 12px 10px rgb(94, 94, 94);
+      }
+      .box{
+        width: 100px;
+        height: 100px;
+        background-color: #d9afd9;
+        /* 96 pixels == 1 inch */
+      }
+      .containerx > .box{
+        background-color: red;
+      }
+      .container li a {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Esi Esi Esi Hala Madrid</h1>
+    <!-- inline css (not recommanded) -->
+    <div class="container">
+      <div class="box" id="box-1">BOX 1</div>
+      <div class="box" id="box-2">BOX 2</div>
+      <div class="box" id="box-3">BOX 3</div>
+      <div class="box" id="box-4">BOX 4</div>
+    </div>
+    <div class="containerx">
+      <div class="box" id="box-1">
+        <div class="box"></div>
+      </div>
+      <div class="box" id="box-2">BOX 2</div>
+      <div class="box" id="box-3">BOX 3</div>
+      <div class="box" id="box-4">BOX 4</div>
+      <div class="box" id="box-5">BOX 5</div>
+    </div>
+
+    <p class="lofi grad">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, est
+      sequi, deleniti facilis fugiat, temporibus atque ea unde qui modi harum
+      enim porro sed similique distinctio! Sit dolore excepturi molestiae.
+    </p>
+    <p class="lofi">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+      consequuntur debitis. Saepe recusandae, tenetur blanditiis expedita, iure
+      qui necessitatibus obcaecati ipsam excepturi, earum esse consequatur
+      voluptate itaque illum perspiciatis debitis.
+    </p>
+    <button class="lofi grad">Click me</button>
+  </body>
+</html>
