@@ -1,29 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Backgrouds</title>
     <!-- Internal Css -->
     <style>
-        /* "*" universal select means each and every element */
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .container{
-            background-color: darkkhaki;
-        }
-        .bg{
-            background-color: black;
-            color: white;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      /* "*" universal select means each and every element */
+      /* 
+        background 
+            solid color
+            gradient
+                linear gradient
+                radial gradient
+            image    
+               @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        */
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        width: 100%;
+        height: 40vh;
+        text-align: center;
+        /* background-color: #85ffbd;
+        background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%); */
+
+        background-image: url("https://images.pexels.com/photos/27514901/pexels-photo-27514901/free-photo-of-woman-in-hat-sitting-with-hand-on-cheek.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* padding: 6rem; */
+      }
+
+      .bg {
+        background-color: black;
+        color: white;
+      }
+      .mt-1 {
+        margin-top: 1.5rem;
+      }
+      .content{
+        padding: 1.5rem;
+      }
+      .heading{
+        border-left: 8px solid red;
+        padding-left: 1rem;
+      }
+      .btn{
+        padding: 1rem 1.5rem;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: .3rem;
+        box-shadow: 12px 12px 10px  rgb(78, 73, 73);
+        cursor: pointer;
+      }
+      .btn:hover{
+        background-color: black;
+        box-shadow: 5px 5px 10px  rgb(78, 73, 73);
+        color: white;
+      }
+
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1 >Welcome to the Backgrounds in Css</h1>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="content">
+      <h1 class="mt-1 heading">Welcome to Secret Service</h1>
+      <p class="mt-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit unde
+        eaque est iusto! Soluta et sapiente dolor obcaecati porro minima vel
+        enim repudiandae, temporibus tempore nesciunt quia aspernatur cum vero!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut laboriosam
+        numquam vel similique, obcaecati, expedita, tenetur maiores beatae
+        accusantium laborum natus enim minima consequatur quos unde cumque
+        quaerat odit facilis provident nesciunt magni? Pariatur!
+      </p>
+      <button class="mt-1 btn">Join Now and Serve the Ummah</button>
     </div>
-    <a class="container" href="https://shahzadfarooq.com" target="_blank">Go the the world best website</a>
-</body>
+  </body>
 </html>

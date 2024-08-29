@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: goldenrod;
+            padding: 1rem;
+            color: white;
+            /* text-align: center; */
+            text-transform: uppercase;
+        }
+        .box{
+            padding: 2rem;
+            background-color: purple;
+            margin: 1rem;
+            display: inline-block;
+            /* width: 100px;
+            height: 100px; */
+        }
+        /**
+        display => how element will take space and accept design
+            block => take full available space + execellent design accept 
+            inline => take as space as their content + poor design accept
+            inline-block => take less space + acha design apply
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">BOX 1</div>
+        <div class="box" id="box-2">BOX 2</div>
+        <div class="box" id="box-3">BOX 3</div>
+        <div class="box" id="box-4">BOX 4</div>
+        <span class="box" id="box-5">BOX 5</span>
+    </div>
+</body>
+</html>
