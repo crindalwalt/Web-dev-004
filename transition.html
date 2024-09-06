@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: gainsboro;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: firebrick;
+            border-radius: .4rem;
+            box-shadow: 4px 3px 12px rgb(99, 99, 99);
+            /* transition-duration: 1s;
+            transition-property: background-color ;
+            transition-timing-function: ease-out; */
+            /* transition-delay: 5s; */
+            transition: all .2s ease-in; 
+
+        }
+
+        .box:hover{
+            background-color: forestgreen;
+            
+
+
+
+
+        }
+        .box:active{
+            transform: scale(.6);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>

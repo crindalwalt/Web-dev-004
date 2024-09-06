@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+body {
+  background-color: var(--light-color);
+}
+
+:root {
+  /* --light-color: #eec170;
+  --dark-color: #0a0908;
+  --s-1-color: #772f1a;
+  --p-1-color: #585123;
+  --p-2-color: #489fb5;
+  --p-3-color: #82c0cc; */
+
+  --light-color: #e3edec;
+  --dark-color: #0a0908;
+  --s-1-color: #ffa62b;
+  --p-1-color: #001d3d;
+  --p-2-color: #489fb5;
+  --p-3-color: #82c0cc;
+}
+.text-secondary{
+    color: var(--dark-color);
+}
