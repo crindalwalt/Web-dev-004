@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in Html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 253, 222);
+            /* background-image: url("https://images.pexels.com/photos/7045460/pexels-photo-7045460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            --sqaure-side: 180px;
+            width: var(--sqaure-side);
+            height: var(--sqaure-side);
+            background-color: peru; /* country name in south america*/
+            border-radius: 50% ;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-weight: bolder;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: azure;
+            text-shadow: 6px 6px 12px grey;
+            transition: all 500ms ease;
+            cursor: not-allowed;
+
+
+            /* Animation */
+            /* animation-name: loading;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3;
+            animation-delay: 5s;
+            animation-timing-function: ease-in;
+            animation-direction: reverse;
+            animation-play-state: paused; */
+
+            /* animation: loading 2s ease 0s infinite alternate forwards running; */
+            animation: sadia 5s ease 0s infinite;
+        }
+
+        /* .box:hover{
+            background-color: plum;
+        } */
+
+
+
+
+        @keyframes loading {
+            /* from and to method */
+            /* from {
+                background-color: palegreen;
+            }
+
+            to{
+                background-color: red;
+            } */
+
+            /* percentage method */
+            0%{
+                background-color: peru;
+                
+            }
+            25%{
+                background-color: orange;
+            }
+            50%{
+                background-color: orangered;
+            }
+            75%{
+                background-color: brown;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+
+
+        @keyframes sadia {
+            0%{
+                background-color: darkgray;
+                transform: rotate(0deg);
+            }
+            25%{
+                background-color: darkkhaki;
+                transform: rotate(90deg);
+            }
+            50%{
+                background-color: darkseagreen;
+                transform: rotate(180deg);
+            }
+            75%{
+                background-color: darksalmon;
+                transform: rotate(270deg);
+            }
+            100%{
+                background-color: darkturquoise;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+              </svg>
+        </div>
+    </div>
+</body>
+</html>
