@@ -168,3 +168,115 @@
   padding: 1rem;
   margin: 1.5rem 0rem;
 }
+
+/* =========================PRODUCT CARDS======================= */
+#product-section{
+  padding: 3rem;
+}
+.product-card-holder{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.p-card{
+  width: var(--p-card-width);
+  height: var(--p-card-height);
+  /* background-color: darkkhaki; */
+  /* background-color: black;
+  color: white; */
+  border-radius: .5rem;
+  background-color: gainsboro;
+  font-family: "Roboto", sans-serif !important;
+  transition: all .2s ease;
+  cursor: pointer;
+  margin: .5rem;
+}
+
+.p-card:hover{
+  transform: scale(1.05);
+}
+.p-card-head{
+  width: inherit;
+  height: calc( var(--p-card-height) / 2);
+  /* background-color: red; */
+}
+.p-card-head img{
+  width: inherit;
+  height: inherit;
+  /* border-radius: .5rem; */
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.p-card-body{
+  padding: .4rem ;
+
+}
+
+.pc-title{
+  font-size: larger;
+}
+.pc-rating svg{
+  color: rgb(211, 180, 3);
+}
+.pc-banners{
+  
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.pc-free-delivery-banner{
+  background-color: rgb(255, 255, 151);
+  padding: .2rem;
+  color: black;
+  display: inline-block ;
+  font-size: small;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 120px;
+  border-radius: .3rem;
+}
+.pc-sale{
+  background-color: lightsalmon;
+  padding: .2rem;
+  color: black;
+  display: inline-block ;
+  font-size: small;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 120px;
+  border-radius: .3rem;
+  margin-left: .2rem;
+}
+
+
+.pc-price{
+  font-size: large;
+  font-weight: bold;
+}
+
+.pc-st-price{
+  margin-left: .5rem;
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.767);
+}
+.pc-d-price{
+  font-size: x-large;
+}
+.pc-cta button{
+  display: block;
+  width: 100%;
+  padding: .7rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+  background-color: var(--p-1-color);
+  color: var(--light-color);
+}

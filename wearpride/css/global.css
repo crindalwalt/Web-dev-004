@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
 }
 body {
   background-color: var(--light-color);
@@ -24,7 +24,20 @@ body {
   --p-1-color: #001d3d;
   --p-2-color: #489fb5;
   --p-3-color: #82c0cc;
+
+
+
+  --p-card-width: 250px;
+  --p-card-height: 400px;
 }
 .text-secondary{
     color: var(--dark-color);
+}
+
+
+.ms-1{
+  margin-left: .2rem;
+}
+.my-1{
+  margin: .3rem 0rem;
 }
