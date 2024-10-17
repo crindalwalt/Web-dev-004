@@ -50,6 +50,14 @@
             grid-column-start: 2;
             grid-column-end: 5;
         }
+
+        @media only screen and (max-width: 400px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr !important;
+                background-color: black;
+            }
+        }
     </style>
 </head>
 <body>
