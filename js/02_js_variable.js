@@ -14,8 +14,8 @@ let name = "Shahzad Farooq";
 var nombre = "Hala Madrid";
 let friendName = "Zaid";
 const PI = 3.1415;
-
+let isMarried = false;
 const apiKey = "ad20c9595803f9641f6370b142b17096-d010bdaf-23ab9953";
-// PI = 4.3245;
+
 
 console.log(typeof(age))
