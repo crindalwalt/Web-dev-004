@@ -67,3 +67,6 @@ console.log("n1 = " + n1)
 let condition = 34 > 45 || num1 > num2;
 console.log(!condition)
 
+
+let daysLeft = 67;
+daysLeft += 56;
