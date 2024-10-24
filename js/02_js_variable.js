@@ -16,6 +16,8 @@ let friendName = "Zaid";
 const PI = 3.1415;
 let isMarried = false;
 const apiKey = "2353";
+let friendsName = ["Esha","Sana","Amna"]
+let something = undefined;
 
 
 console.log(typeof(age))
