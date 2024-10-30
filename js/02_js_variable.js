@@ -18,6 +18,13 @@ let isMarried = false;
 const apiKey = "2353";
 let friendsName = ["Esha","Sana","Amna"]
 let something = undefined;
+let jsObj = {
+    name: "Shahzad",
+    age : 21,
+    friends : ["Zaid","Muhtshim","X2"]
+}
+
+// console.log(jsObj.name)
 
 
 console.log(typeof(age))
