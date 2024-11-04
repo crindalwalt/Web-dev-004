@@ -1,7 +1,7 @@
 console.log("Hello from the loops");
 
 let marks = [12, 34, 56, 34, 64, 74];
-let friendName = ["Sadia", "Aaliya", "Sana"];
+let friendName = ["Sadia","Sana"];
 console.log(marks);
 friendName.push("Codebook");
 // friendName.pop()
@@ -24,7 +24,7 @@ friendName.push("Codebook");
  * 2) a condition
  * 3) updation of controlling variable
  */
-friendName = ["Sadia", "Aaliya", "Sana"];
+friendName = ["Sadia", "Sana"];
 console.log(friendName.length);
 
 for (let i = 0; i < friendName.length; i++) {
